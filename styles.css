@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    gap: 100px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.score {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.score p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.score span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+#pongCanvas {
+    border: 3px solid #00ff88;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    cursor: none;
+    display: block;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    max-width: 800px;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+.instructions strong {
+    color: #00ff88;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+    .scoreboard {
+        gap: 50px;
+    }
+
+    #pongCanvas {
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .score span {
+        font-size: 2rem;
+    }
+}
