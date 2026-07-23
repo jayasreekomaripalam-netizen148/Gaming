@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-card">
+            <h1>😂 Joke Generator</h1>
+            
+            <div class="joke-display">
+                <p id="joke-text">Click the button to get a random joke!</p>
+                <p id="joke-type" class="joke-type"></p>
+            </div>
+
+            <div class="button-group">
+                <button id="new-joke-btn" class="btn btn-primary">Get New Joke</button>
+                <button id="copy-btn" class="btn btn-secondary">Copy Joke</button>
+                <button id="favorite-btn" class="btn btn-favorite">❤️ Add to Favorites</button>
+            </div>
+
+            <div class="loading" id="loading">
+                <span class="spinner"></span>
+                <p>Loading joke...</p>
+            </div>
+
+            <div class="category-filter">
+                <label for="category">Filter by Category:</label>
+                <select id="category">
+                    <option value="">All Categories</option>
+                    <option value="general">General</option>
+                    <option value="programming">Programming</option>
+                    <option value="knock-knock">Knock-Knock</option>
+                </select>
+            </div>
+
+            <div class="stats">
+                <p>Jokes Generated: <span id="joke-count">0</span></p>
+            </div>
+
+            <div class="favorites">
+                <h3>❤️ Favorites</h3>
+                <ul id="favorites-list"></ul>
+                <button id="clear-favorites-btn" class="btn btn-danger">Clear Favorites</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
